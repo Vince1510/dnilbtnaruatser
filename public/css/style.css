@@ -1,21 +1,24 @@
 :root {
-    --bg-primary: #0f172a;       
-    --bg-secondary: #1e293b;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent: #fbbf24;
-    --accent-hover: #f59e0b;     
-    --danger: #ef4444;
-    --border: #334155;
+    --bg-primary: #101a33;       
+    --bg-secondary: #f89a1c;
+    --text-primary: #ffffff;
+    --text-button: #000000;
+    --border-button: #ffffff;
+    --footer-bg: #634d2e;
 
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --line-height-relaxed: 1.6;
-
-    --space-sm: 0.5rem;
-    --space-md: 1rem;
-    --space-lg: 2rem;
+    --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --radius: 0.75rem;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-primary: #f8fafc;
+        --bg-secondary: #ffb74d;
+        --text-primary: #1e293b;
+        --border-button: #1e293b;
+        --footer-bg: #8d6e63;
+    }
 }
 
 * {
@@ -28,9 +31,11 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: var(--font-sans);
-    line-height: var(--line-height-relaxed);
     min-height: 100vh;
-    padding: var(--space-lg);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3 {
@@ -63,36 +68,59 @@ a:hover, a:focus {
 }
 
 nav {
-    display: flex;
-    gap: var(--space-md);
-    margin: var(--space-lg) 0;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+    width: 100%;
 }
 
-nav button, .btn {
+nav button {
     background-color: var(--bg-secondary);
-    color: var(--text-primary);
-    border: 1px solid var(--border);
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius);
+    color: var(--text-button);
+    border: 5px solid var(--border-button);
+    padding: 1.25rem 0.5rem;
+    border-radius: 12px;
     cursor: pointer;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 2.25rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-nav button:hover, .btn:hover {
-    background-color: var(--border);
-    border-color: var(--accent);
+nav button.btn-large {
+    grid-column: 1 / -1;
+    padding: 1.75rem 1rem;
+}
+
+nav button:hover, 
+nav button:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.4);
+}
+
+nav button:focus-visible {
+    outline: 4px solid var(--border-button);
+    outline-offset: 6px;
+}
+
+.back-button:focus-visible {
+    outline: 2px solid var(--text-primary);
+    outline-offset: 4px;
+    border-radius: 4px;
 }
 
 footer {
-    margin-top: auto;
-    padding: var(--space-lg) 0;
-    border-top: 1px solid var(--border);
-    color: var(--text-secondary);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--footer-bg);
+    color: var(--text-primary);
     text-align: center;
-    font-size: 0.875rem;
+    padding: 0.75rem;
+    font-size: 0.9rem;
 }
 
 .card {
@@ -133,4 +161,29 @@ footer {
 .back-button::before {
     content: "←";
     font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    nav button {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    nav button.btn-large {
+        padding: 1.5rem 1rem;
+    }
 }

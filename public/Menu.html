@@ -3,14 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu – Dnilbtnaruatser</title>
+    <link rel="icon" href="images/Logo-Dark.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="images/Logo-Light.svg" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
 </head>
 <body>
-    <header>
-        <button class="back-button" onclick="location.href='index.html'">Terug naar Home</button>
-    </header>
-    <h1>Menu</h1>
+    <div class="top-bar">
+        <a class="back-button" href="index.html"><span data-i18n="back_button">Terug</span> <span class="hide-mobile" data-i18n="back_button_mobile">naar Home</span></a>
+    </div>
+
+    <img src="images/Logo-Light.svg" alt="Dnilbtnaruatser Logo" class="site-logo">
+    
+    <main>
+        <h1 data-i18n="menu_title">Ons Menu</h1>
+        <p data-i18n="menu_p">Ontdek de smaken van Dnilbtnaruatser. Wij serveren met liefde bereide hoofdgerechten en heerlijke desserts.</p>
+
+        <h2 style="margin-top: 2rem;" data-i18n="main_dishes">Hoofdgerechten</h2>
+        <ul>
+            <li data-i18n="dish_pumpkin">Geroosterde Pompoen met honing en walnoten</li>
+            <li data-i18n="dish_catch">Vangst van de Dag – dagvers en duurzaam</li>
+            <li data-i18n="dish_burger">Dnilbt Burger – onze eigen speciale creatie</li>
+        </ul>
+
+        <h2 style="margin-top: 2rem;" data-i18n="desserts">Nagerechten</h2>
+        <ul>
+            <li data-i18n="dish_apple_pie">Huisgemaakte Appeltaart</li>
+            <li data-i18n="dish_surprise_ice">Verrassingsijsje van de chef</li>
+        </ul>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 data-i18n="nav_product">Dnilbtnaruatser</h3>
+                <p class="footer-tagline" data-i18n="footer_tagline">Eerlijk eten, lokale smaken.<br>Een plek voor iedereen.</p>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="hours_title">Openingstijden</h3>
+                <ul data-i18n="footer_hours_short">
+                    <li>Ma – Do: 17:00 – 22:00</li>
+                    <li>Vr – Za: 12:00 – 23:00</li>
+                    <li>Zo: 12:00 – 21:00</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer_contact_title">Contact & Adres</h3>
+                <address>
+                    <span data-i18n="footer_address">Restaurantstraat 12<br>
+                    3000 Rotterdam</span><br><br>
+                    <a href="tel:+3110123456">010 – 123 456</a><br>
+                    <a href="mailto:info@dnilbtnaruatser.nl">info@dnilbtnaruatser.nl</a>
+                </address>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer_nav_title">Navigatie</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="Menu.html" data-i18n="nav_menu">Menu</a></li>
+                    <li><a href="About.html" data-i18n="nav_about">Over ons</a></li>
+                    <li><a href="Reserve.html" data-i18n="nav_reserve">Reserveren</a></li>
+                    <li><a href="Contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="Product.html" data-i18n="nav_product">B.L.I.N.D.</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" data-i18n="footer_copy">&copy; 2026 Dnilbtnaruatser &mdash; Alle rechten voorbehouden</div>
+    </footer>
+
+
 </body>
 </html>

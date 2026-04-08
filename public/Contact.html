@@ -1,95 +1,107 @@
 <!doctype html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Dnilbtnaruatser is een uniek en toegankelijk restaurant in Rotterdam met een speciale B.L.I.N.D. menukaart."
-    />
-    <title>Contact – Dnilbtnaruatser</title>
-    <link
-      rel="icon"
-      href="images/Logo-Dark.svg"
-      media="(prefers-color-scheme: dark)"
-    />
-    <link
-      rel="icon"
-      href="images/Logo-Light.svg"
-      media="(prefers-color-scheme: light)"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="top-bar">
-      <a class="back-button" href="index.html"
-        ><span data-i18n="back_button">Terug</span>
-        <span class="hide-mobile" data-i18n="back_button_mobile"
-          >naar Home</span
-        ></a
-      >
-    </div>
 
-    <img
-      src="images/Logo-Light.svg"
-      alt="Dnilbtnaruatser Logo"
-      class="site-logo"
-      fetchpriority="high"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Dnilbtnaruatser is een uniek en toegankelijk restaurant in Rotterdam met een speciale B.L.I.N.D. menukaart." />
+  <title>Contact – Dnilbtnaruatser</title>
+  <link rel="icon" href="images/Logo-Dark.svg" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="images/Logo-Light.svg" media="(prefers-color-scheme: light)" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css">
+</head>
 
-    <main>
-      <h1 data-i18n="title_contact">Contact</h1>
-      <p data-i18n="contact_p">
-        Heeft u vragen of wilt u meer informatie? Neem contact met ons op via
-        onderstaande gegevens of kom gezellig langs!
-      </p>
-    </main>
-    <footer>
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3 data-i18n="nav_product">Dnilbtnaruatser</h3>
-          <p class="footer-tagline" data-i18n="footer_tagline">
-            Eerlijk eten, lokale smaken.<br />Een plek voor iedereen.
+<body>
+  <div class="top-bar">
+    <a class="back-button" href="index.html">
+      <span class="arrow">⬅ </span>
+      <span data-i18n="back_button">Terug</span>
+      <span class="hide-mobile" data-i18n="back_button_mobile">naar Home</span>
+    </a>
+  </div>
+
+  <img src="images/Logo-Light.svg" alt="Dnilbtnaruatser Logo" class="site-logo" fetchpriority="high" />
+
+  <main>
+    <h1 data-i18n="title_contact">Contact</h1>
+    <div class="contact-container">
+      <section>
+        <form onsubmit="redirect()" id="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="63297c2d-426b-467d-afb7-d8905006b316">
+          <input type="text" name="name" placeholder="Naam" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <textarea class="textarea" name="message" placeholder="type een bericht..." required></textarea>
+          <button type="submit">Submit Form</button>
+        </form>
+      </section>
+      <section>
+        <div>
+          <p>
+            Kom Gezellig Langs<br>
+            Heb je een vraag over het menu, wil je een tafel reserveren voor een grote groep of heb je iets te vieren?
+            Wij staan klaar om je te helpen. Bel ons, stuur een mailtje of loop gewoon even binnen!
           </p>
         </div>
-        <div class="footer-col">
-          <h3 data-i18n="hours_title">Openingstijden</h3>
-          <ul data-i18n="footer_hours_short">
-            <li>Ma – Do: 17:00 – 22:00</li>
-            <li>Vr – Za: 12:00 – 23:00</li>
-            <li>Zo: 12:00 – 21:00</li>
-          </ul>
+
+        <div>
+          <p>
+            Openingstijden:<br>
+            Maandag - Donderdag: 17:00 – 22:00<br>
+            Vrijdag - Zaterdag: 12:00 – 23:00<br>
+            Zondag: 12:00 – 21:00
+          </p>
         </div>
-        <div class="footer-col">
-          <h3 data-i18n="footer_contact_title">Contact & Adres</h3>
-          <address>
-            <span data-i18n="footer_address"
-              >Restaurantstraat 12<br />
-              3000 Rotterdam</span
-            ><br /><br />
-            <a href="tel:+3110123456">010 – 123 456</a><br />
-            <a href="mailto:info@dnilbtnaruatser.nl">info@dnilbtnaruatser.nl</a>
-          </address>
-        </div>
-        <div class="footer-col">
-          <h3 data-i18n="footer_nav_title">Navigatie</h3>
-          <ul>
-            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="Menu.html" data-i18n="nav_menu">Menu</a></li>
-            <li><a href="About.html" data-i18n="nav_about">Over ons</a></li>
-            <li>
-              <a href="Reserve.html" data-i18n="nav_reserve">Reserveren</a>
-            </li>
-            <li><a href="Contact.html" data-i18n="nav_contact">Contact</a></li>
-            <li>
-              <a href="Product.html" data-i18n="nav_product">B.L.I.N.D.</a>
-            </li>
-          </ul>
-        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3 data-i18n="nav_product">Dnilbtnaruatser</h3>
+        <p class="footer-tagline" data-i18n="footer_tagline">
+          Eerlijk eten, lokale smaken.<br />Een plek voor iedereen.
+        </p>
       </div>
-      <div class="footer-bottom" data-i18n="footer_copy">
-        &copy; 2026 Dnilbtnaruatser &mdash; Alle rechten voorbehouden
+      <div class="footer-col">
+        <h3 data-i18n="hours_title">Openingstijden</h3>
+        <ul data-i18n="footer_hours_short">
+          <li>Ma – Do: 17:00 – 22:00</li>
+          <li>Vr – Za: 12:00 – 23:00</li>
+          <li>Zo: 12:00 – 21:00</li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="footer-col">
+        <h3 data-i18n="footer_contact_title">Contact & Adres</h3>
+        <address>
+          <span data-i18n="footer_address">Restaurantstraat 12<br />
+            3000 Rotterdam</span><br /><br />
+          <a href="tel:+3110123456">010 – 123 456</a><br />
+          <a href="mailto:info@dnilbtnaruatser.nl">info@dnilbtnaruatser.nl</a>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_nav_title">Navigatie</h3>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="Menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="About.html" data-i18n="nav_about">Over ons</a></li>
+          <li>
+            <a href="Reserve.html" data-i18n="nav_reserve">Reserveren</a>
+          </li>
+          <li><a href="Contact.html" data-i18n="nav_contact">Contact</a></li>
+          <li>
+            <a href="Product.html" data-i18n="nav_product">B.L.I.N.D.</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" data-i18n="footer_copy">
+      &copy; 2026 Dnilbtnaruatser &mdash; Alle rechten voorbehouden
+    </div>
+  </footer>
+</body>
+<script src="js/contact.js"></script>
+
 </html>

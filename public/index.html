@@ -1,20 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Dnilbtnaruatser is een uniek en toegankelijk restaurant in Rotterdam met een speciale B.L.I.N.D. menukaart.">
+    <title>Home – Dnilbtnaruatser</title>
+    <link rel="icon" href="images/Logo-Dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="images/Logo-Light.svg" media="(prefers-color-scheme: light)">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
 </head>
 <body>
-        <h1>Home</h1>
-    <nav>
-        <button onclick="location.href='Contact.html'">Contact</button>
-        <button onclick="location.href='Menu.html'">Menu</button>
-        <button onclick="location.href='Reserve.html'">Reserve</button>
-        <button onclick="location.href='Product.html'">Product</button>
-        <button onclick="location.href='About.html'">About</button>
-    </nav>
+
+    <img src="images/Logo-Light.svg" alt="Dnilbtnaruatser Logo" class="site-logo" fetchpriority="high">
+
+    <main>
+        <h1 data-i18n="welcome_title">Welkom</h1>
+        <p data-i18n="welcome_text">Welkom bij Dnilbtnaruatser. Kies hieronder wat u wilt doen.</p>
+        
+        <nav aria-label="Hoofdnavigatie">
+            <a href="Menu.html" class="btn-large" data-i18n="nav_menu">Menu</a>
+            <a href="About.html" data-i18n="nav_about">Over ons</a>
+            <a href="Reserve.html" data-i18n="nav_reserve">Reserveren</a>
+            <a href="Contact.html" data-i18n="nav_contact">Contact</a>
+            <a href="Product.html" data-i18n="nav_product">B.L.I.N.D.</a>
+        </nav>
+
+        <section aria-label="Uitgelichte gerechten" style="margin-top: 4rem;">
+            <h2 data-i18n="popular_dishes">Populaire gerechten</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3 data-i18n="baked_pumpkin">Geroosterde Pompoen</h3>
+                    <p style="margin-bottom:0;" data-i18n="baked_pumpkin_desc">Malse pompoen uit de oven, met geitenkaas, walnoten en een vleugje honing. Een warme klassieker.</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="blind_surprise">B.L.I.N.D. Verrassing</h3>
+                    <p style="margin-bottom:0;" data-i18n="blind_surprise_desc">Laat uw zintuigen prikkelen met ons speciale 4-gangen blinde menu. Een mysterieuze smaakervaring.</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-label="Over B.L.I.N.D." style="margin-top: 4rem;">
+            <h2 data-i18n="what_is_blind">Wat is B.L.I.N.D.?</h2>
+            <div class="card" style="margin-bottom: 0;">
+                <p data-i18n="blind_intro">
+                    <strong>B.L.I.N.D.</strong> is onze speciale, fysieke menukaart in de vorm van een schijf. 
+                    Deze leest de gerechten hardop voor, zodat u perfect zelfstandig uw maaltijd kunt uitkiezen!
+                </p>
+                <p style="margin-bottom: 0;">
+                    <a href="Product.html" data-i18n="blind_more_info">Klik hier voor meer informatie over B.L.I.N.D.</a>
+                </p>
+            </div>
+        </section>
+
+        <section aria-label="Direct Reserveren" style="margin-top: 4rem;">
+            <h2 data-i18n="direct_reserve">Direct een tafel reserveren</h2>
+            <div class="card" style="text-align: center; margin-bottom: 0;">
+                <p style="font-size: 1.1em;" data-i18n="direct_reserve_text">
+                    Wilt u komen eten bij Dnilbtnaruatser? U kunt direct bellen om uw tafel vast te leggen. Wij spreken u graag persoonlijk!
+                </p>
+                <a href="tel:+3110123456" class="btn-cta" data-i18n="call_now">Bel nu: 010 - 123 456</a>
+            </div>
+        </section>
+
+        <section aria-label="Openingstijden" style="margin-top: 4rem;">
+            <h2 data-i18n="hours_title">Openingstijden</h2>
+            <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.4rem;">
+                <li data-i18n="hours_week">Maandag t/m donderdag: 17:00 – 22:00</li>
+                <li data-i18n="hours_weekend">Vrijdag en zaterdag: 12:00 – 23:00</li>
+                <li data-i18n="hours_sunday">Zondag: 12:00 – 21:00</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 data-i18n="nav_product">Dnilbtnaruatser</h3>
+                <p class="footer-tagline" data-i18n="footer_tagline">Eerlijk eten, lokale smaken.<br>Een plek voor iedereen.</p>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="hours_title">Openingstijden</h3>
+                <ul data-i18n="footer_hours_short">
+                    <li>Ma – Do: 17:00 – 22:00</li>
+                    <li>Vr – Za: 12:00 – 23:00</li>
+                    <li>Zo: 12:00 – 21:00</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer_contact_title">Contact & Adres</h3>
+                <address>
+                    <span data-i18n="footer_address">Restaurantstraat 12<br>
+                    3000 Rotterdam</span><br><br>
+                    <a href="tel:+3110123456">010 – 123 456</a><br>
+                    <a href="mailto:info@dnilbtnaruatser.nl">info@dnilbtnaruatser.nl</a>
+                </address>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer_nav_title">Navigatie</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="Menu.html" data-i18n="nav_menu">Menu</a></li>
+                    <li><a href="About.html" data-i18n="nav_about">Over ons</a></li>
+                    <li><a href="Reserve.html" data-i18n="nav_reserve">Reserveren</a></li>
+                    <li><a href="Contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="Product.html" data-i18n="nav_product">B.L.I.N.D.</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" data-i18n="footer_copy">&copy; 2026 Dnilbtnaruatser &mdash; Alle rechten voorbehouden</div>
+    </footer>
+
+
+
+
 </body>
 </html>

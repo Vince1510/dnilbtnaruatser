@@ -69,11 +69,5 @@ function showDishes (data) {
 
             div.appendChild(ul)
         }
-    }
-
-    // for (let catagory of catagorys) {
-    //     const h2 = document.createElement("h2")
-    //     h2.textContent = catagory
-    //     menuContainer.appendChild(h2)
-    // }
+    }§
 }

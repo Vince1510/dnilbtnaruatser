@@ -1,6 +1,39 @@
+@font-face {
+    font-family: 'Dyslexie';
+    src: url('../fonts/19812R.woff2') format('woff2'),
+         url('../fonts/19812R.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Dyslexie';
+    src: url('../fonts/19812I.woff2') format('woff2'),
+         url('../fonts/19812I.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Dyslexie';
+    src: url('../fonts/19812B.woff2') format('woff2'),
+         url('../fonts/19812B.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Dyslexie';
+    src: url('../fonts/19812BI.woff2') format('woff2'),
+         url('../fonts/19812BI.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
 :root {
     --bg-primary: #0a0e17;       
-    --bg-secondary: #e68a00;     
+    --bg-secondary: #d17d00;         
     --bg-panel: #14213D; 
     
     --text-primary: #fdfbf7;
@@ -9,8 +42,8 @@
     --border-button: #fbd38d;
     --footer-bg: #14213D;
 
-    --font-heading: 'Georgia', serif;
-    --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: 'Dyslexie', 'Georgia', serif;
+    --font-sans: 'Dyslexie', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --radius: 8px;
 }
 
@@ -162,6 +195,12 @@ footer {
 
 @media (prefers-color-scheme: light) {
     .site-logo { content: url('../images/Logo-Light.svg'); }
+}
+
+@media (prefers-color-scheme: light) {
+    a{
+        color: var(--text-primary);
+    }
 }
 
 @media (max-width: 768px) {

@@ -10,5 +10,130 @@ h1{
     color: #333;
     font-size: 2rem;
     text-align: center;
-    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 1.75em;
+    font-family: var(--font-sans);
+    white-space: nowrap;
+    cursor: pointer;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav a.btn-large, nav button.btn-large {
+    flex: 1 1 100%;
+    padding: 1.5em 1em;
+    font-size: 2.2em;
+}
+
+nav a:hover, nav button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    background-image: linear-gradient(135deg, #ffa333 0%, #e68a00 100%);
+}
+
+nav a:focus-visible, nav button:focus-visible {
+    outline: 4px solid var(--border-button);
+    outline-offset: 6px;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.site-logo {
+    max-width: 15rem;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+    content: url('../images/Logo-Dark.svg');
+}
+
+.dish-container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 0 0 0;
+    text-align: start;
+}
+
+.dish-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0 0 0;
+    text-align: end;
+}
+
+.catagory {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.space {
+    flex: 1;
+}
+
+.dish {
+    font-size: 1.3rem;
+    list-style: none;
+    padding: 15px 0 5px 0;
+}
+
+.ingredients {
+    font-size: 1rem;
+    list-style: none;
+    max-width: 50vw;
+}
+
+.dish-image {
+    width: 20vw;
+    height: auto;
+    max-height: 20vw;
+    object-fit: cover;
+    display: block;
+}
+
+@media (prefers-color-scheme: light) {
+    .site-logo { content: url('../images/Logo-Light.svg'); }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 1.8rem; }
+    
+    nav { flex-direction: column; }
+    
+    nav a, nav button { 
+        width: 100%; 
+        font-size: 1.1rem;
+    }
+    
+    main { padding: 1rem; }
+
+    .dish-container-reverse, .dish-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .dish-image {
+        width: 80vw;
+        height: auto;
+        max-height: 80vw;
+        object-fit: cover;
+        display: block;
+    }
+
 }

@@ -1,0 +1,156 @@
+{
+  "test": "test",
+  "catagorys": [
+
+    {
+    "name": "Hoofdgerechten",
+    "dishes": [
+      {
+        "dish": "Hamburger",
+        "price": "16",
+        "ingredients": [
+          "Rundergehakt",
+          " Hamburgerbroodje",
+          " Sla",
+          " Tomaat",
+          " Ui",
+          " Kaas (optioneel)",
+          " Augurk",
+          " Sauzen (ketchup, mayonaise, mosterd)"
+        ]
+      },
+      {
+        "dish": "Lasagne",
+        "price": "18",
+        "ingredients": [
+          "Lasagnebladen",
+          " Rundergehakt",
+          " Tomatensaus",
+          " Ui",
+          " Knoflook",
+          " Bechamelsaus",
+          " Geraspte kaas",
+          " Italiaanse kruiden"
+        ]
+      },
+      {
+        "dish": "Pizza",
+        "price": "12",
+        "ingredients": [
+          "Pizzadeeg (bloem, water, gist, zout)",
+          " Tomatensaus",
+          " Mozzarella",
+          " Olijfolie",
+          " Toppings (bijv. salami, groenten, ham, champignons)"
+        ]
+      },
+      {
+        "dish": "Biefstuk",
+        "price": "26",
+        "ingredients": [
+          "Rundvlees (biefstuk)",
+          " Zout en peper",
+          " Boter of olie",
+          " Knoflook",
+          " Kruiden (zoals rozemarijn of tijm)"
+        ]
+      },
+      {
+        "dish": "Tortilla",
+        "price": "19",
+        "ingredients": [
+          "Tortillawraps",
+          " Kip of gehakt",
+          " Paprika",
+          " Ui",
+          " Sla",
+          " Kaas",
+          " Salsa of saus"
+        ]
+      }
+    ]
+    },
+    {
+      "name": "Bijgerechten",
+      "dishes": [
+        {
+          "dish": "Frietjes",
+          "price": "4",
+          "ingredients": [
+            "Aardappelen",
+            " Olie",
+            " Zout"
+          ]
+        },
+        {
+          "dish": "Soep",
+          "price": "7",
+          "ingredients": [
+            "Bouillon",
+            " Groenten (bijv. wortel, ui, selderij)",
+            " Kruiden",
+            " Eventueel vlees of room"
+          ]
+        },
+        {
+          "dish": "Salape",
+          "price": "8",
+          "ingredients": [
+            "Sla",
+            " Tomaat",
+            " Komkommer",
+            " Dressing",
+            " Eventueel kaas, noten of vlees"
+          ]
+        },
+        {
+          "dish": "Tosti",
+          "price": "6",
+          "ingredients": [
+            "Brood",
+            " Kaas",
+            " Ham (optioneel)",
+            " Boter"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nagerechten",
+    "dishes": [
+      {
+        "dish": "Tiramisu",
+        "price": "9",
+        "ingredients": [
+          "Mascarpone",
+          " Lange vingers",
+          " Koffie",
+          " Cacaopoeder",
+          " Suiker",
+          " Eieren"
+        ]
+      },
+      {
+        "dish": "Sundae ijs",
+        "price": "8",
+        "ingredients": [
+          "IJs (vanille of andere smaken)",
+          " Slagroom",
+          " Saus (chocolade, aardbei, karamel)",
+          " Toppings (noten, sprinkles)"
+        ]
+      },
+      {
+        "dish": "Crème brûlée",
+        "price": "7",
+        "ingredients": [
+          "Room",
+          " Eidooiers",
+          " Suiker",
+          " Vanille"
+        ]
+      }
+    ]
+  }
+  ]
+}

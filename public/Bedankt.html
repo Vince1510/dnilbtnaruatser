@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Dnilbtnaruatser</title>
+    <title>B.L.I.N.D. – Dnilbtnaruatser</title>
     <link rel="icon" href="images/Logo-Dark.svg" media="(prefers-color-scheme: light)">
     <link rel="icon" href="images/Logo-Light.svg" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/bedankt.css">
 </head>
 
 <body>
@@ -23,17 +23,13 @@
     <img src="images/Logo-Light.svg" alt="Dnilbtnaruatser Logo" class="site-logo">
 
     <main>
-        <h1 data-i18n="title_contact">Contact</h1>
-        <section>
-            <form onsubmit="redirect()" id="form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="63297c2d-426b-467d-afb7-d8905006b316">
-                <input type="text" name="name" value="Naam" onclick="this.value=''" required>
-                <input type="email" name="email" value="E-mail" onclick="this.value=''" required>
-                <textarea name="message" onclick="this.value=''" required>type een bericht...</textarea>
-                <button  type="submit">Submit Form</button>
-            </form>
-        </section>
+        <h1>Verstuurd</h1>
+        <div class="check-circle">
+            <img src="images/checkmark.webp" alt="check">
+        </div>
+        <a class="terug" href="Contact.html" data-i18n="nav_contact">Terug</a>
     </main>
+
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
@@ -76,5 +72,5 @@
 
 
 </body>
-<script src="js/contact.js"></script>
+
 </html>

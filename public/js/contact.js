@@ -12,3 +12,5 @@ document.getElementById("form").addEventListener("submit", function (e) {
 function redirect() {
   window.location.href = "Bedankt.html";
 }
+
+document.getElementById("textarea").value = "Type een bericht...";

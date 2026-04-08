@@ -26,15 +26,35 @@
 
   <main>
     <h1 data-i18n="title_contact">Contact</h1>
-    <section>
-      <form onsubmit="redirect()" id="form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="63297c2d-426b-467d-afb7-d8905006b316">
-        <input type="text" name="name" value="Naam" onclick="this.value=''" required>
-        <input type="email" name="email" value="E-mail" onclick="this.value=''" required>
-        <textarea name="message" onclick="this.value=''" required>type een bericht...</textarea>
-        <button type="submit">Submit Form</button>
-      </form>
-    </section>
+    <div class="contact-container">
+      <section>
+        <form onsubmit="redirect()" id="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="63297c2d-426b-467d-afb7-d8905006b316">
+          <input type="text" name="name" placeholder="Naam" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <textarea class="textarea" name="message" placeholder="type een bericht..." required></textarea>
+          <button type="submit">Submit Form</button>
+        </form>
+      </section>
+      <section>
+        <div>
+          <p>
+            Kom Gezellig Langs<br>
+            Heb je een vraag over het menu, wil je een tafel reserveren voor een grote groep of heb je iets te vieren?
+            Wij staan klaar om je te helpen. Bel ons, stuur een mailtje of loop gewoon even binnen!
+          </p>
+        </div>
+
+        <div>
+          <p>
+            Openingstijden:<br>
+            Maandag - Donderdag: 17:00 – 22:00<br>
+            Vrijdag - Zaterdag: 12:00 – 23:00<br>
+            Zondag: 12:00 – 21:00
+          </p>
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
     <div class="footer-grid">
@@ -83,4 +103,5 @@
   </footer>
 </body>
 <script src="js/contact.js"></script>
+
 </html>

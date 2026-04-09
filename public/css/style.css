@@ -399,6 +399,7 @@ footer {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        white-space: normal;
     }
 
     .dish-image {

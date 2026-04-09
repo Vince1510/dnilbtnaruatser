@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em; 
+}
+
+h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.check-circle {
+  width: 10em;
+  height: 10em;
+  background: #f6a400;
+  border: 3px solid white;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-circle img {
+  width: 5em; 
+}

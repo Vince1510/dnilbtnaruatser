@@ -36,7 +36,7 @@
 }
 
 :root {
-  --bg-primary: #0a0e17;
+  --bg-primary: #181c1d;
   --bg-secondary: #d17d00;
   --bg-panel: #14213d;
 
@@ -53,13 +53,13 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-primary: #fdfbf7;
-    --bg-secondary: #d97706;
+    --bg-primary: #f7f8f2;
+    --bg-secondary: #854700;
     --bg-panel: #ffffff;
     --text-primary: #1e293b;
     --text-secondary: #475569;
     --border-button: #1e293b;
-    --footer-bg: #e2e8f0;
+    --footer-bg: #f2f2f2;
   }
 }
 
@@ -285,130 +285,139 @@ footer {
     font-family: var(--font-sans);
     white-space: nowrap;
     cursor: pointer;
-    
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-nav a.btn-large,
-nav button.btn-large {
-  flex: 1 1 100%;
-  padding: 1.5em 1em;
-  font-size: 2.2em;
-}
+  nav a.btn-large,
+  nav button.btn-large {
+    flex: 1 1 100%;
+    padding: 1.5em 1em;
+    font-size: 2.2em;
+  }
 
-nav a:hover,
-nav button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(135deg, #ffa333 0%, #e68a00 100%);
-}
+  nav a:hover,
+  nav button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(135deg, #ffa333 0%, #e68a00 100%);
+  }
 
-nav a:focus-visible,
-nav button:focus-visible {
-  outline: 4px solid var(--border-button);
-  outline-offset: 6px;
-}
+  nav a:focus-visible,
+  nav button:focus-visible {
+    outline: 4px solid var(--border-button);
+    outline-offset: 6px;
+  }
 
-footer {
-  background-color: var(--footer-bg);
-  padding: 2rem 1rem;
-  margin-top: auto;
-}
+  footer {
+    background-color: var(--footer-bg);
+    padding: 2rem 1rem;
+    margin-top: auto;
+  }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-.footer-col ul {
-  list-style: none;
-}
+  .footer-col ul {
+    list-style: none;
+  }
 
-.site-logo {
+  .site-logo {
     max-width: 15rem;
     height: auto;
     margin: 0 auto 2rem auto;
     display: block;
-    content: url('../images/Logo-Dark.svg');
-}
+    content: url("../images/Logo-Dark.svg");
+  }
 
-.dish-container-reverse {
+  .dish-container-reverse {
     display: flex;
     flex-direction: row-reverse;
     padding: 20px 0 0 0;
     text-align: start;
-}
+  }
 
-.dish-container {
+  .dish-container {
     display: flex;
     flex-direction: row;
     padding: 20px 0 0 0;
     text-align: end;
-}
+  }
 
-.catagory {
+  .catagory {
     padding: 20px 20px;
     text-align: center;
-}
+  }
 
-.space {
+  .space {
     flex: 1;
-}
+  }
 
-.dish {
+  .dish {
     font-size: 1.3rem;
     list-style: none;
     padding: 15px 0 5px 0;
-}
+  }
 
-.ingredients {
+  .ingredients {
     font-size: 1rem;
     list-style: none;
     max-width: 50vw;
-}
+  }
 
-.dish-image {
+  .dish-image {
     width: 20vw;
     height: auto;
     max-height: 20vw;
     object-fit: cover;
     display: block;
-}
+  }
 
-@media (prefers-color-scheme: light) {
-    .site-logo { content: url('../images/Logo-Light.svg'); }
-}
-
-@media (max-width: 768px) {
-    h1 { font-size: 1.8rem; }
-    
-    nav { flex-direction: column; }
-    
-    nav a, nav button { 
-        width: 100%; 
-        font-size: 1.1rem;
+  @media (prefers-color-scheme: light) {
+    .site-logo {
+      content: url("../images/Logo-Light.svg");
     }
-    
-    main { padding: 1rem; }
+  }
 
-    .dish-container-reverse, .dish-container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        white-space: normal;
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      flex-direction: column;
+    }
+
+    nav a,
+    nav button {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    .dish-container-reverse,
+    .dish-container {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      white-space: normal;
     }
 
     .dish-image {
-        width: 80vw;
-        height: auto;
-        max-height: 80vw;
-        object-fit: cover;
-        display: block;
+      width: 80vw;
+      height: auto;
+      max-height: 80vw;
+      object-fit: cover;
+      display: block;
     }
-
   }
 }

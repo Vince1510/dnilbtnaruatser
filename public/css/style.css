@@ -213,13 +213,16 @@ footer {
   flex-direction: row-reverse;
   padding: 20px 0 0 0;
   text-align: start;
+  justify-content: flex-start;
+
 }
 
 .dish-container {
   display: flex;
-  flex-direction: row;
   padding: 20px 0 0 0;
   text-align: end;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .catagory {
@@ -248,7 +251,8 @@ footer {
   height: auto;
   max-height: 20vw;
   object-fit: cover;
-  display: block;
+  margin: auto;
+  display: flex;
 }
 
 @media (prefers-color-scheme: light) {
@@ -413,9 +417,9 @@ footer {
     }
 
     .dish-image {
-      width: 80vw;
+      width: 70vw;
       height: auto;
-      max-height: 80vw;
+      max-height: 70vw;
       object-fit: cover;
       display: block;
     }

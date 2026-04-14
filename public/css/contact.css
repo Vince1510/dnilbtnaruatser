@@ -40,11 +40,16 @@ textarea {
   font-size: 1.35em;
   font-family: var(--font-sans);
   padding: 0.5em 0.5em;
+  color: var(--text-primary);
   min-height: 3em;
 }
 
 button {
-  background-color: #c27800;
+  background-image: linear-gradient(
+    135deg,
+    var(--bg-secondary) 0%,
+    #cc7a00 100%
+  );
   border: 4px solid var(--border-button);
   border-radius: var(--radius);
   font-weight: 300;
@@ -83,14 +88,14 @@ button {
 }
 
 ::placeholder {
-  color: black;
+  color: var(--text-primary);
   opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: black;
+  color: var(--text-primary);
 }
 
 :-ms-input-placeholder {
-  color: black;
+  color: var(--text-primary);
 }
